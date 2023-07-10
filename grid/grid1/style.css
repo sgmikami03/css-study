@@ -1,8 +1,42 @@
 .glid_container {
     display: grid;
     width: 100%;
-   /*grid-template-columns: 1fr 1fr 1fr;*/
-   grid-template-columns: minmax(200px, 1fr) repeat(2, 1fr);
-   grid-template-rows: minmax(70px, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3 ,minmax(100px, auto));
+    grid-template-areas: 
+        "b1 b2 b3 b3"
+        "b4 b4 b3 b3"
+        "b4 b4 b3 b3"
+    ;
 }
 
+.b1 {
+    grid-area: b1;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.b3 {
+    grid-area: b3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.b4 {
+    grid-area: b4;
+    z-index: 1;
+}
+
+.b5 {
+    grid-area: b4;
+    z-index: 2;
+}
+
+.B4 {
+    background-color: blue;
+    color: hsl(0, 0%, 100%);
+    grid-column: -2;
+    grid-row: -2;
+}
