@@ -1,3 +1,6 @@
 .glid_container {
     display: grid;
+    width: 600px;
+   /*grid-template-columns: 1fr 1fr 1fr;*/
+   grid-template-columns: repeat(3, 1fr);
 }
