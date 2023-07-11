@@ -4,3 +4,38 @@ body {
  /* GoogleChromeのバグ対策 */
   font-weight: 500;
 }
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 150px 200px 150px 220px 100px 150px 200px;
+}
+
+.grid-container img {
+  width: calc(100% - 40px);
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-title, .info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #666;
+  color: #fff;
+  width: calc(100% - 40px);
+}
+
+.info-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.info-list ul {
+  padding-left: 20px;
+}
