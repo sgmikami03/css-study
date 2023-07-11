@@ -45,48 +45,48 @@ body {
   .grid-container {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 150px 150px 300px 100px 200px 300px;
-    grid-template-areas: 
-        "info-title info-list"
-        "photo1 photo1"
-        "photo2 photo3"
-        "info-text info-text"
-        "photo4 photo4"
-        "photo5 photo5"
+    grid-template-areas:
+      "info-title info-list"
+      "photo1 photo1"
+      "photo2 photo3"
+      "info-text info-text"
+      "photo4 photo4"
+      "photo5 photo5"
     ;
   }
 
   /*gridarea定義*/
 
-.info-title {
-  grid-area: info-title;
-}
+  .info-title {
+    grid-area: info-title;
+  }
 
-.info-list {
-  grid-area: info-list;
-}
+  .info-list {
+    grid-area: info-list;
+  }
 
-.info-text {
-  grid-area: info-text;
-}
+  .info-text {
+    grid-area: info-text;
+  }
 
-.photo1 {
-  grid-area: photo1;
-}
+  .photo1 {
+    grid-area: photo1;
+  }
 
-.photo2 {
-  grid-area: photo2;
-}
+  .photo2 {
+    grid-area: photo2;
+  }
 
-.photo3 {
-  grid-area: photo3;
-}
+  .photo3 {
+    grid-area: photo3;
+  }
 
-.photo4 {
-  grid-area: photo4;
-}
+  .photo4 {
+    grid-area: photo4;
+  }
 
-.photo5 {
-  grid-area: photo5;
-}
+  .photo5 {
+    grid-area: photo5;
+  }
 
 }
